@@ -1,0 +1,158 @@
+:root {
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.conteiner {
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navigation */
+
+.site-navigation {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.site-navigation .navigation {
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  color: #0f0101;
+  font-weight: bold;
+}
+
+.site-navigation .navigation:hover,
+.site-navigation .navigation:focus {
+  color: #1abc9c;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-head {
+  min-height: 100px;
+  margin-bottom: 70px;
+}
+
+/* Logo */
+
+.logo {
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  color: #555252;
+  margin: 0px;
+}
+
+.logo:hover,
+.logo:focus {
+  color: #aaa9a9;
+}
+
+.logo .logo-disign {
+  font-weight: bold;
+  color: #1abc9c;
+}
+
+.logo .logo-disign:focus,
+.logo-disign .logo-disign:hover {
+  color: #53cdb5;
+}
+
+/* Main product page */
+
+.main-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #515151;
+  margin-top: 0;
+  margin-bottom: 130px;
+  text-align: center;
+}
+
+.page-section {
+  margin: 0;
+  margin-bottom: 100px;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+
+.featured-list {
+  flex-basis: calc(100% / 4 - 15px);
+  flex-grow: 0;
+  margin-right: 30px;
+  margin: 0px;
+}
+
+.featured-list:nth-child(4n) {
+  margin-right: 0px;
+}
+
+/* News section */
+
+.news-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+
+.hot-news {
+  flex-basis: calc(100% / 3 - 15px);
+  flex-grow: 0;
+  margin-right: 30px;
+  margin: 0px;
+}
+
+.news-title {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 45px;
+}
+
+.hot-news .about {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.news-img {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
