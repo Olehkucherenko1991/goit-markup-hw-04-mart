@@ -9,6 +9,10 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   margin: 0;
 }
@@ -19,7 +23,7 @@ body {
   list-style: none;
 }
 
-.conteiner {
+.container {
   width: 1110px;
   margin-left: auto;
   margin-right: auto;
@@ -114,14 +118,68 @@ body {
 }
 
 .featured-list {
-  flex-basis: calc(100% / 4 - 15px);
+  flex-basis: calc(100% / 4 - 22.5px);
   flex-grow: 0;
   margin-right: 30px;
-  margin: 0px;
+  margin-bottom: 30px;
 }
 
 .featured-list:nth-child(4n) {
   margin-right: 0px;
+}
+
+.prod-image {
+  cursor: pointer;
+  background-color: #e9f0fd;
+  margin: 0px;
+}
+
+.product-desription {
+  margin-top: 0px;
+}
+
+.about-product {
+  display: flex;
+  margin: 0px;
+}
+
+.text-description {
+  flex-grow: 1;
+  margin: 0px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 6px;
+  padding-right: 55px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #323232;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.about-product .text-description:hover {
+  background-color: #1abc9c;
+}
+
+.about-product .price-description:hover {
+  background-color: blueviolet;
+}
+
+.price-description {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #8c8c8c;
+  color: #ffffff;
+  margin: 0px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 /* News section */
@@ -133,26 +191,58 @@ body {
 }
 
 .hot-news {
-  flex-basis: calc(100% / 3 - 15px);
+  flex-basis: calc(100% / 3 - 23.3px);
   flex-grow: 0;
   margin-right: 30px;
-  margin: 0px;
+}
+
+.hot-news:nth-child(3n) {
+  margin-right: 0px;
 }
 
 .news-title {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 900;
+  line-height: 15px;
   font-family: 'Open Sans', sans-serif;
   margin-top: 0px;
   margin-bottom: 45px;
+  cursor: pointer;
 }
 
 .hot-news .about {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  line-height: 17px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .news-img {
   margin-top: 0;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Button */
+
+.button-article {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  width: 160px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4ec6ab;
+  color: #ffffff;
+  border-radius: 4px;
+  transition: 0.5s all ease;
+}
+
+.button-article:hover {
+  transform: translate(+10px) scale(1.05);
 }
