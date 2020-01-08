@@ -1,4 +1,11 @@
 :root {
+  --navigation-text-style: 'Open Sans', sans-serif;
+  --navigation-color: #0f0101;
+  --title-color: #515151;
+  --title-style: 'Roboto', sans-serif;
+  --product-text-style: 'Roboto', sans-serif;
+  --primary-text-color: #555252;
+  --primary-text-style: 'Open Sans', sans-serif;
 }
 
 html {
@@ -29,44 +36,6 @@ body {
   margin-right: auto;
 }
 
-/* Navigation */
-
-.site-navigation {
-  margin: 0;
-  list-style: none;
-  display: flex;
-  margin-left: auto;
-}
-
-.site-navigation .navigation {
-  display: block;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 14px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  color: #0f0101;
-  font-weight: bold;
-}
-
-.site-navigation .navigation:hover,
-.site-navigation .navigation:focus {
-  color: #1abc9c;
-}
-
-.page-nav {
-  display: flex;
-  align-items: center;
-}
-
-.main-head {
-  min-height: 100px;
-  margin-bottom: 70px;
-}
-
 /* Logo */
 
 .logo {
@@ -94,13 +63,51 @@ body {
   color: #53cdb5;
 }
 
+/* Navigation */
+
+.site-navigation {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+.site-navigation .navigation {
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--navigation-text-style);
+  color: var(--navigation-color);
+  font-weight: bold;
+}
+
+.site-navigation .navigation:hover,
+.site-navigation .navigation:focus {
+  color: #1abc9c;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-head {
+  min-height: 100px;
+  margin-bottom: 70px;
+}
+
 /* Main product page */
 
 .main-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--title-style);
   font-size: 48px;
   font-weight: bold;
-  color: #515151;
+  color: var(--title-color);
   margin-top: 0;
   margin-bottom: 130px;
   text-align: center;
@@ -129,6 +136,7 @@ body {
 }
 
 .prod-image {
+  display: block;
   cursor: pointer;
   background-color: #e9f0fd;
   margin: 0px;
@@ -151,7 +159,7 @@ body {
   padding-left: 6px;
   padding-right: 55px;
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--product-text-style);
   font-weight: 600;
   color: #ffffff;
   background-color: #323232;
@@ -159,12 +167,12 @@ body {
   cursor: pointer;
 }
 
-.about-product .text-description:hover {
+.featured-list:hover .text-description {
   background-color: #1abc9c;
 }
 
-.about-product .price-description:hover {
-  background-color: blueviolet;
+.featured-list:hover .price-description {
+  background-color: #8c8c8c;
 }
 
 .price-description {
@@ -174,11 +182,11 @@ body {
   padding-right: 8px;
   font-size: 18px;
   text-transform: uppercase;
-  background-color: #8c8c8c;
+  background-color: #7fd9c7;
   color: #ffffff;
   margin: 0px;
   cursor: pointer;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--product-text-style);
   font-weight: bold;
 }
 
@@ -204,18 +212,20 @@ body {
   font-size: 18px;
   font-weight: 900;
   line-height: 15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--primary-text-style);
   margin-top: 0px;
   margin-bottom: 45px;
   cursor: pointer;
+  color: var(--primary-text-color);
 }
 
 .hot-news .about {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--primary-text-style);
   font-size: 14px;
   line-height: 17px;
   margin-top: 0;
   margin-bottom: 20px;
+  color: var(--primary-text-color);
 }
 
 .news-img {
