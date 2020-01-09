@@ -36,6 +36,11 @@ body {
   margin-right: auto;
 }
 
+.page-section {
+  margin: 0;
+  padding-bottom: 100px;
+}
+
 /* Logo */
 
 .logo {
@@ -111,11 +116,7 @@ body {
   margin-top: 0;
   margin-bottom: 130px;
   text-align: center;
-}
-
-.page-section {
-  margin: 0;
-  margin-bottom: 100px;
+  text-transform: uppercase;
 }
 
 .products-list {
@@ -133,6 +134,10 @@ body {
 
 .featured-list:nth-child(4n) {
   margin-right: 0px;
+}
+
+.featured-list:nth-child(n + 5) {
+  margin-bottom: 0px;
 }
 
 .prod-image {
@@ -172,7 +177,7 @@ body {
 }
 
 .featured-list:hover .price-description {
-  background-color: #8c8c8c;
+  background-color: #7fd9c7;
 }
 
 .price-description {
@@ -182,7 +187,7 @@ body {
   padding-right: 8px;
   font-size: 18px;
   text-transform: uppercase;
-  background-color: #7fd9c7;
+  background-color: #8c8c8c;
   color: #ffffff;
   margin: 0px;
   cursor: pointer;
